@@ -6,7 +6,7 @@ RUN apk update
 RUN apk add --no-cache nodejs npm python3 py3-pip alpine-sdk libcap bluez bluez-dev eudev-dev dbus openrc
 RUN setcap cap_net_raw+eip $(eval readlink -f $(which node))
 
-WORKDIR /
+WORKDIR ttlock-standalone
 
 COPY start.sh /app/start.sh
 RUN chmod +x /app/start.sh
