@@ -8,9 +8,6 @@ RUN setcap cap_net_raw+eip $(eval readlink -f $(which node))
 
 WORKDIR /
 
-RUN pwd
-RUN ls -l
-
 COPY ttlock-standalone/start.sh /app/start.sh
 RUN chmod +x /app/start.sh
 COPY ttlock-standalone/addon /app
