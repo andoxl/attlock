@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saper-2/ha-addon-tt-lock-standalone.git"
+    "url": "git+https://github.com/andoxl/attlock.git"
   },
   "keywords": [
     "ttlock",
@@ -22,16 +22,16 @@
     "offline",
     "standalone"
   ],
-  "author": "saper-2 <sapers.2@gmail.com>",
+  "author": "andoxl <andoxl@proton.me>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/saper-2/ha-addon-tt-lock-standalone"
+    "url": "https://github.com/andoxl/attlock"
   },
-  "homepage": "https://github.com/saper-2/ha-addon-tt-lock-standalone",
+  "homepage": "https://github.com/andoxl/attlock",
   "dependencies": {
     "async-mqtt": "^2.6.1",
     "express": "^4.17.1",
-    "ttlock-sdk-js": "github:saper-2/ttlock-sdk-js#main",
+    "ttlock-sdk-js": "github:andoxl/ttlock-sdk-js#main",
     "ws": "^7.4.2",
     "basic-auth": "^2.0.1"
   },
