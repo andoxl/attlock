@@ -108,12 +108,11 @@ module.exports = async (options) => {
     localIP = options.localIP;
   }
   app.use((req, res, next) => {
-    // stand-alone - disable IP filtering.
-    //if (!localIP.includes(req.ip)) {
-    //  res.status(403).send("Denied");
-    //} else {
+    if (!localIP.includes(req.ip)) {
+      res.status(403).send("Denied");
+    } else {
       next();
-    //}
+    }
   });
 
   app.use("/frontend", express.static("frontend"));
